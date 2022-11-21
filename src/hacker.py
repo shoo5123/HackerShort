@@ -52,7 +52,9 @@ def main():
                 logger.info("鯨がうごきました")
                 logger.info("https://etherscan.io/address/0x59abf3837fa962d6853b4cc0a19513aa031fd32b")
                 create_short_entry(symbol, side, type, quantity)
-        logger.info("まだ鯨は動いてないよ")
+                time.sleep(300)
+                break
+            logger.info("まだ鯨は動いてないよ")
         # 1min おきに実行
         time.sleep(60)
 
