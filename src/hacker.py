@@ -54,7 +54,8 @@ def main():
                 create_short_entry(symbol, side, type, quantity)
                 time.sleep(300)
                 break
-            logger.info("まだ鯨は動いてないよ")
+            else:
+               logger.info("まだ鯨は動いてないよ")
         # 1min おきに実行
         time.sleep(60)
 
